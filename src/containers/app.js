@@ -1,4 +1,7 @@
 import React, {Component} from 'react';
+import Header from '../components/header';
+import Search from '../components/search';
+import Filter from '../components/filter';
 
 export default class App extends Component {
 	cnstructor() {
@@ -7,14 +10,18 @@ export default class App extends Component {
 		}
 	}
 	componentDidMount(){
-		fetch('src/data/employeeList.json')
+		fetch('src/data/config.js')
 			.then((response) => response.json())
 			.then((responseJson) => console.log(responseJson))
 			.catch(() => console.log("error in fetching data"));
 	}
 	render() {
 		return (
-			<h1>Hey!</h1>
+			<div className="main">
+				<Header />
+				<Search />
+				<Filter />
+			</div>
 		)
 	}
 }
