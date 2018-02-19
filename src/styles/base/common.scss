@@ -1,0 +1,17 @@
+body {
+	font-size: 16px;
+	font-family: $default-regular;
+}
+
+.main {
+	width: 80%;
+	margin: 0 auto;
+	background: $bg-color;
+}
+
+.nav {
+	padding: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}

@@ -19,8 +19,10 @@ export default class App extends Component {
 		return (
 			<div className="main">
 				<Header />
-				<Search />
-				<Filter />
+				<div className="nav">
+					<Search />
+					<Filter />
+				</div>
 			</div>
 		)
 	}
